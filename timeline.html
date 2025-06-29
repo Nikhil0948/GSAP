@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeline in GSAP</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body, html{
+            height: 100%;
+            width: 100%;
+        }
+        #box1{
+            width: 200px;
+            height: 200px;
+            background-color: crimson;  
+        }   
+        #box2{
+            width: 200px;
+            height: 200px;
+            background-color: royalblue;  
+        }
+        #box3{
+            width: 200px;
+            height: 200px;
+            background-color: lightseagreen;  
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        
+        // timeline bna skte hai hum alag alag elements ke liye 
+        var t1 = gsap.timeline();
+
+        t1.to("#box1", {
+            x: 1000 ,
+            rotate: 360,
+            scale: 0.5,
+            duration: 2,
+            // delay: 1,
+            backgroundColor: "orange-yellow"
+        })
+        t1.to("#box2", {
+            x: 1000 ,
+            rotate: 360,
+            scale: 0.5,
+            duration: 2,
+            // delay: 3,
+            backgroundColor: "orange-yellow"
+        })
+        t1.to("#box3", {
+            x: 1000 ,
+            rotate: 360,
+            scale: 0.5,
+            duration: 2,
+            // delay: 5,
+            backgroundColor: "orange-yellow"
+        })
+
+       
+    </script>
+</body>
+</html>
