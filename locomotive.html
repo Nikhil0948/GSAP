@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locomotive JS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html, body{
+            height: 100%;
+            width: 100%;
+        }
+        #page1{
+            height: 100vh;
+            /* background-color: rgb(102, 194, 237); */
+        }
+        #page2{
+            height: 100vh;  
+            /* background-color: rgb(111, 234, 120); */
+        }
+        #page3{
+            height: 100vh;
+            /* background-color: rgb(90, 88, 227); */
+        }
+
+        #divImage{
+            height: 100%;
+            width: 35%;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            /* background-color: red; */
+            overflow: hidden;
+        }
+        #divImage img{
+            height: 100%;
+            width: 100%;
+            scale: 1.5;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="main">
+        <div id="page1"></div>
+        <div id="page2">
+            <div  id="divImage">
+                <img data-scroll data-scroll-speed="4" src="https://plus.unsplash.com/premium_photo-1750353386208-7e189f9845ef?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+        </div>
+        <div id="page3"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="locomotive.js"></script>
+</body>
+</html>
